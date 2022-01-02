@@ -1,78 +1,86 @@
-html, body, div, form, fieldset, legend, label
-{
- margin: 0;
- padding: 0; 
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label {
+  margin: 0;
+  padding: 0;
 }
- 
-table
-{
- border-collapse: collapse;
- border-spacing: 0;
-}
- 
-th, td
-{
- text-align: left;
- vertical-align: top;
-}
- 
-h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
- 
-img { border: 0; }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+caption {
+  font-weight: normal;
+}
+
+img {
+  border: 0;
+}
 
 .main1 {
-
-    text-align:  center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
-
- .block1 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.inpu-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
- .main2 {
-    text-align: center;
-    font-size: 10px;
-    border: 2px solid rgb(65, 61, 61);
-    width: 370px;
-
+.main2 {
+  text-align: center;
+  font-size: 10px;
+  border: 2px solid rgb(65, 61, 61);
+  width: 370px;
 }
 
-
-    .blok2 {
-       
-     padding: 0.3rem 0;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
+.blok2 {
+  padding: 0.3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .button3 {
-   
-    display: flex; 
-    justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
 
 .all1 {
-    margin: auto;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intext input {
-    width: 360px;
-    height: 30px;
-
+  width: 360px;
+  height: 30px;
 }
 
 .intext button {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }

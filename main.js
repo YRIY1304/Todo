@@ -1,33 +1,43 @@
-let arrayTodo = [];
+let arrayTodos = [];
+$(".add-button").on("click", () => {
+  addTask();
+  render(arrayTodos);
+});
 
-$(document).ready(() => {
-})
+function addTask() {
+  let inpText = $(".input-field").val();
+  arrayTodos.push(inpText);
+}
 
-const render = (array) => {
-let str = '';
-
-array.forEach(element => {
-    str = str + `<div class="blok2">
+function render(array) {
+  let str = "";
+  array.forEach((element, i) => {
+    str =
+      str +
+      `<div id="${i}" class="blok2">
     <div class="main2">
         <h1>${element}</h1>
     </div>
-    <button>x</button>
+    <button class="del-btn" onclick="delToDo(this)">x</button>
 </div>`;
+  });
 
-});
-
-$('.tasks').html(str)
+  $(".tasks").html(str);
 }
 
-const addTask = function(){
-    let inpText = $('.block1 input').val();
-    arrayTodo.push(inpText)
-    render(arrayTodo)
+function delToDo(element) {
+  const arr = arrayTodos.filter((item, i) => {
+    return i != element.parentNode.id;
+  });
+
+  arrayTodos = arr;
+  render(arrayTodos);
 }
 
-$(document).on('click', '.block1 button', () => {
-    addTask()
-})
-
-
-
+let obj = {
+  a: "hello",
+  b: "wolrd",
+  c: function () {
+    console.log("aaaa");
+  },
+};
