@@ -33,11 +33,3 @@ function delToDo(element) {
   arrayTodos = arr;
   render(arrayTodos);
 }
-
-let obj = {
-  a: "hello",
-  b: "wolrd",
-  c: function () {
-    console.log("aaaa");
-  },
-};
