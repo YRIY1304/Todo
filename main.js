@@ -7,6 +7,7 @@ $(".add-button").on("click", () => {
 function addTask() {
   let inpText = $(".input-field").val();
   arrayTodos.push(inpText);
+  $(".input-field").val("");
 }
 
 function render(array) {
